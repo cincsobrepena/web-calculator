@@ -31,6 +31,8 @@ function compute() {
     value = value2 * value;
   } else if (operator == '/') {
     value = value2 / value;
+  } else if (operator == '%') {
+    value = value2 % value;
   }
   operator = '';
   displayElement.innerHTML = value.toString();
